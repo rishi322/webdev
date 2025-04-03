@@ -138,6 +138,17 @@
                 display: none !important;
             }
         }
+        .logo-container {
+      display: flex;
+      align-items: center;
+ 
+    }
+    
+    .logo-img {
+      height: 100px; /* Adjust this value to make your logo bigger or smaller */
+      width: auto;
+      max-width: 300px; /* Prevents logo from getting too wide */
+    }
     </style>
 </head>
 
@@ -174,10 +185,12 @@
             </div>
             
             <!-- Responsive Navbar -->
-            <nav class="flex justify-between items-center p-4 bg-transparent">
+            <nav class="flex justify-between items-center p-4 bg-transparent" style="margin-top:-3rem;">
                 <div class="flex items-center space-x-2">
-                    <img alt="Athen Luxe Logo" class="h-6 sm:h-8" src="./imgs/logo.png"/>
-                    <span class="text-white text-sm sm:text-xl font-bold logo-text">ATHEN LUXE</span>
+                   
+                        <!-- Replace the src with the path to your logo image -->
+                        <img src="./imgs/logo4.png" alt="Athen Luxe Logo" class="logo-img">
+                   
                 </div>
                 
                 <!-- Desktop Navigation -->
